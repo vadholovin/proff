@@ -1,0 +1,47 @@
+.modal.modal--book#modal-book(aria-hidden='true')
+  .modal__overlay(tabindex='-1', data-micromodal-close)
+    .modal__container.container(role='dialog', aria-modal='true')
+      button.modal__close(aria-label='Закрыть попап', data-micromodal-close)
+      main.modal__content
+      
+        .book-media
+          .book-media__img
+            figure.promo-img.promo-img--modal
+              img(src="img/general/book.png", alt="обложка книги Профессия по любви")
+              .promo-img__shadow
+                <svg viewBox="0 0 1209 578" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="35" result="effect0_gaussianBlur" />
+                  </filter>
+                </defs>
+                <g filter="url(#filter_1)">
+                  <path d="M394 157C611.6 157 788 121.854 788 78.5C788 35.1456 611.6 0 394 0C176.4 0 0 35.1456 0 78.5C0 121.854 176.4 157 394 157Z" transform="translate(140.5 140.5)" id="Oval" fill="#060D0C" fill-opacity="0.149019614" stroke="none" />
+                </g>
+              </svg>
+
+          .book-media__body
+            h2.book-media__title.title.title--book
+              | Книга-тренинг
+              br
+              | «Профессия по любви»
+            p.book-media__subtitle
+              | Как найти свое любимое дело в меняющимся мире
+            span.book-media__cost 990₽
+
+        form.form.form--modal
+          .form__module.form__module--left
+            .form__wrapper.form__wrapper--modal
+              label.visuallyhidden(for="user-contact") Ваша электронная почта
+              input.form__input#user-email(
+                type="email",
+                name="user-email",
+                placeholder="Ваша электронная почта"
+              )
+            p.form__notes
+              | Книга будет выслана на вашу электронную почту в PDF. В письме мы также вышлем информацию о том, как при желании получить нашу обратную связь по выполненным из книги заданиям или присоединиться к онлайн-курсу.
+          .form__module.form__module--right
+            button.button.button--stack.no-valid
+              | Купить за 990₽

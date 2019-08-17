@@ -1,0 +1,73 @@
+/*------------------------------------*\
+  #EXAMPLE
+\*------------------------------------*/
+
+.example {
+
+  &__lead {
+    max-width: 236px;
+    margin-bottom: 50px;
+
+
+    @media (min-width: 80em) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 530px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: rem(24);
+    line-height: 1.2;
+
+    @media (min-width: 62em) {
+      font-size: rem(28);
+    }
+
+    &--second {
+      margin-top: 72px;
+    }
+  }
+
+  &__sub {
+    margin-bottom: 24px;
+    font-weight: bold;
+  }
+
+  &__desc {
+    max-width: 1180px;
+    font-size: rem(14);
+  }
+
+  &__ol {
+    margin-bottom: 70px;
+  }
+
+  &__o-li {
+    margin-bottom: 30px;
+  }
+
+  &__ul {
+    margin-top: 15px;
+  }
+
+  &__u-li {
+    position: relative;
+    margin-top: 10px;
+    padding-left: 25px;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0.4em;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #000;
+    }
+  }
+}

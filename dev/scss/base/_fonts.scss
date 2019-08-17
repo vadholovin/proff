@@ -1,0 +1,40 @@
+/*------------------------------------*\
+  #FONTS
+\*------------------------------------*/
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+      url('../fonts/HelveticaNeue-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeue.woff2') format('woff2'),
+      url('../fonts/HelveticaNeue.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lucida Grande';
+  src: url('../fonts/LucidaGrande-Bold.woff2') format('woff2'),
+      url('../fonts/LucidaGrande-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeue-CondensedBlack.woff2') format('woff2'),
+      url('../fonts/HelveticaNeue-CondensedBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+

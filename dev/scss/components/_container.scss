@@ -1,0 +1,42 @@
+/*------------------------------------*\
+  #CONTAINER
+\*------------------------------------*/
+
+.container {
+  width: 100%;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin: 0 auto;
+}
+
+
+@media (min-width: 576px) {
+  .container { max-width: 562px; }
+}
+
+@media (min-width: 768px) {
+  .container { max-width: 746px; }
+}
+
+@media (min-width: 992px) {
+  .container { max-width: 986px; }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+.container--fluid {
+  width: 100%;
+}

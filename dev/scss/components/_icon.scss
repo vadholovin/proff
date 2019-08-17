@@ -1,0 +1,33 @@
+/*------------------------------------*\
+  #ICON
+\*------------------------------------*/
+
+.icon {
+  display: block;
+
+  &-quote {
+    
+    &--readers {
+      position: absolute;
+      top: 12px;
+      right: -42px;
+      width: 108px;
+      height: 70px;
+      z-index: 1;
+
+      @media (min-width: 90em) {
+        right: -62px;
+        width: 133px;
+        height: 90px;
+      }
+    }
+  }
+
+  &-arrow-left,
+  &-arrow-right {
+    width: 80px;
+    height: 14px;
+    fill: #000;
+  }
+
+}

@@ -1,0 +1,33 @@
+.modal.modal--pack#modal-pack-3(aria-hidden='true')
+  .modal__overlay(tabindex='-1', data-micromodal-close)
+    .modal__container.container(role='dialog', aria-modal='true')
+      button.modal__close(aria-label='Закрыть попап', data-micromodal-close)
+      main.modal__content
+
+        .pack__body
+          h2.service-title.service-title--pack
+            span.service-title__num.service-title__num--pack #3
+            span.service-title__text.service-title__text--pack
+              | Пакет Базовый: «Онлайн курс с регулярной обратной связью»
+          
+          .pack__lead
+            span.pack__cost 12 900₽
+            p
+              | Срок ~1 месяц с момента запуска курса (проводится раз в 3 месяца)
+            p
+              | <span class="highlight highlight--secondary ">Скидка 7 000₽ до 1 июля</span>
+
+        form.form.form--modal
+          .form__module.form__module--left
+            .form__wrapper.form__wrapper--modal
+              label.visuallyhidden(for="user-contact") Ваша электронная почта
+              input.form__input#user-email(
+                type="email",
+                name="user-email",
+                placeholder="Ваша электронная почта"
+              )
+            p.form__notes
+              | Подробная информация будет выслана на вашу электронную почту.
+          .form__module.form__module--right
+            button.button.button--stack.no-valid
+              | Купить за <del>19 900₽</del> 12 900₽

@@ -1,0 +1,204 @@
+/*------------------------------------*\
+  #MODAL
+\*------------------------------------*/
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+}
+
+.modal__container {
+  position: relative;
+  background-color: #fff;
+  
+  width: 100%;
+  max-height: 100vh;
+  overflow-y: auto;
+
+  
+}
+
+.modal__close {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 24px;
+  height: 24px;
+  font-size: 30px;
+  line-height: 0;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: 62em) {
+    top: 35px;
+    right: 35px;
+  }
+}
+
+.modal__close:before {
+  content: "\2715";
+}
+
+.modal__content {
+
+  
+  .modal--exercises &,
+  .modal--example & {
+    padding-top: 96px;
+    padding-bottom: 130px;
+
+    @media (min-width: 80em) {
+      padding-bottom: 210px;
+    }
+  }
+
+  .modal--book & {
+    padding-top: 80px;
+    padding-bottom: 130px;
+
+    @media (min-width: 62em) {
+      padding-top: 55px;
+      padding-bottom: 80px;
+    }
+  }
+
+  .modal--advice & {
+    padding-top: 85px;
+    padding-bottom: 80px;
+  }
+
+  .modal--pack & {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+@-webkit-keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes mmslideIn {
+  from {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes mmslideIn {
+  from {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes mmslideOut {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+@keyframes mmslideOut {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+.modal {
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+
+  .modal__overlay {
+    z-index: 555;
+  }
+}
+
+.modal[aria-hidden="false"] .modal__overlay {
+  -webkit-animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal[aria-hidden="false"] .modal__container {
+  -webkit-animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal[aria-hidden="true"] .modal__overlay {
+  -webkit-animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal[aria-hidden="true"] .modal__container {
+  -webkit-animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal .modal__container,
+.modal .modal__overlay {
+  will-change: transform;
+}

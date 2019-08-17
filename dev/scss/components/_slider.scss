@@ -1,0 +1,59 @@
+/*------------------------------------*\
+  #SLIDER
+\*------------------------------------*/
+
+.slider {
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &-nav {
+
+    &__btn {
+      background-color: transparent;
+      border: 0;
+      border-radius: 0;
+      padding: 8px 0;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+
+      &[aria-disabled=true] {
+
+        .icon {
+          fill: $silver;
+        }
+      }
+    }
+
+    &--readers {
+
+      @media (max-width: 61.99em) {
+        display: flex;
+        justify-content: space-between;
+        margin: 38px auto 0 auto;
+        max-width: 320px;
+      }
+      
+      .slider-nav__btn {
+
+        @media (min-width: 62em) {
+          position: absolute;
+          top: 122px;
+
+          &--prev {
+            left: 0;
+          }
+
+          &--next {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

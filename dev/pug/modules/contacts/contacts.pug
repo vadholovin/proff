@@ -1,0 +1,44 @@
+.container
+  .content__inner
+    h1.title.title--contacts Контакты
+    .contacts__img
+      <svg class="contacts__img-svg">
+        <use xlink:href="#abstract-2"></use>
+      </svg>
+    .contacts__grid.pure-g
+      .pure-u-1.pure-u-lg-5-12
+        p.content__lead.content__lead--contacts
+          | Есть вопросы или комментарии о наших продуктах и услугах? Мы любим слушать наших клиентов. Отправьте нам сообщение, и мы скоро с вами свяжемся:
+        ul.contact-list.contact-list--contacts
+          li.contact-list__item
+            a.contact-list__link(href="mailto:hi@earninlove.com") hi@earninlove.com
+          li.contact-list__item
+            a.contact-list__link(href="tel:+79262119994") +7 (926) 211-99-94
+          li.contact-list__item (включая WhatsApp, Viber, Telegram)
+
+      .pure-u-1.pure-u-lg-7-12
+        form.form.form--contacts
+          fieldset.form__fieldset.form__fieldset--contacts
+            .form__wrapper.form__wrapper--contacts
+              label.visuallyhidden(for="user-name") Имя
+              input.form__input#user-name(
+                type="text",
+                name="user-name",
+                placeholder="Имя"
+              )
+            .form__wrapper.form__wrapper--contacts
+              label.visuallyhidden(for="user-contact") Email или номер телефона
+              input.form__input#user-contact(
+                type="text",
+                name="user-contact",
+                placeholder="Email или номер телефона"
+              )
+            .form__wrapper.form__wrapper--contacts
+              label.visuallyhidden(for="user-message") Сообщение
+              textarea.form__textarea#user-message(
+                name="user-message",
+                rows="1",
+                placeholder="Сообщение"
+              )
+          button.button.button--stack.button--contacts.no-valid(type="submit") Отправить
+

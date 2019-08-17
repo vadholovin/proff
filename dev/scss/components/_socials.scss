@@ -1,0 +1,21 @@
+/*------------------------------------*\
+  #SOCIALS
+\*------------------------------------*/
+
+.socials {
+  display: flex;
+
+  &__item {
+    font-weight: bold;
+    line-height: 1.15;
+    font-size: rem(18);
+
+    &:not(:last-child):after {
+      content: '\a0/\a0';
+    }
+  }
+
+  &--footer {
+    margin-bottom: 26px;
+  }
+}

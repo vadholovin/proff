@@ -1,0 +1,29 @@
+/*------------------------------------*\
+  #BASIC TYPOGRAPHY
+\*------------------------------------*/
+
+html {
+  font-size: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body,
+button,
+input,
+textarea,
+select,
+.pure-g [class *= "pure-u"] {
+  font-family: $primary-font;
+}
+
+body {
+  font-size: rem(16);
+  line-height: 1.875;
+  font-weight: normal;
+  color: $text-color;
+
+  @media (min-width: 80em) {
+    font-size: rem(18);
+    line-height: 1.6;
+  }
+}

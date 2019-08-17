@@ -1,0 +1,35 @@
+.modal.modal--advice#modal-advice(aria-hidden='true')
+  .modal__overlay(tabindex='-1', data-micromodal-close)
+    .modal__container.container(role='dialog', aria-modal='true')
+      button.modal__close(aria-label='Закрыть попап', data-micromodal-close)
+      main.modal__content
+
+        .advice__grid
+          h2.title.title--advice Запись на бесплатную консультацию
+        
+          form.form.form--advice
+            fieldset.form__fieldset.form__fieldset--advice
+              .form__wrapper.form__wrapper--advice
+                label.visuallyhidden(for="user-name") Имя
+                input.form__input#user-name(
+                  type="text",
+                  name="user-name",
+                  placeholder="Имя"
+                )
+              .form__wrapper.form__wrapper--advice
+                label.visuallyhidden(for="user-contact") Номер телефона
+                input.form__input#user-contact(
+                  type="text",
+                  name="user-contact",
+                  placeholder="Номер телефона"
+                )
+              .form__wrapper.form__wrapper--advice
+                label.visuallyhidden(for="user-message") Сообщение
+                textarea.form__textarea#user-message(
+                  name="user-message",
+                  rows="1",
+                  placeholder="Хотите что-то уточнить?"
+                )
+            button.button.button--stack.button--advice.no-valid(type="submit") Записаться
+
+

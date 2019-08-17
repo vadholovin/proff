@@ -1,0 +1,95 @@
+/*------------------------------------*\
+  #EXERCISES
+\*------------------------------------*/
+
+.exercises {
+
+  &__desc {
+    max-width: 744px;
+  }
+  
+  &__text-smaller {
+    font-weight: normal;
+    font-size: rem(14);
+
+    li & {
+      margin-top: 20px;
+    }
+  }
+
+  &__lead {
+    max-width: 236px;
+    margin-bottom: 50px;
+
+
+    @media (min-width: 80em) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__ol {
+    margin-top: 64px;
+    margin-bottom: 60px;
+    counter-reset: counter;
+
+    @media (min-width: 80em) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__o-li {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    font-weight: bold;
+
+
+    @media (min-width: 80em) {
+      margin-bottom: 74px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      counter-increment: counter;
+      content: counters(counter, '.') '. ';
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  ul {
+    
+    hr {
+      max-width: 715px;
+      margin-top: 30px;
+      margin-bottom: 0;
+
+      @media (min-width: 80em) {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  &__ul {
+    margin-top: 64px;
+  }
+
+  &__u-li {
+    margin-bottom: 50px;
+    padding-left: 30px;
+    font-weight: bold;
+
+    @media (min-width: 80em) {
+      margin-bottom: 74px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}

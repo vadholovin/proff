@@ -1,0 +1,127 @@
+/*------------------------------------*\
+  #BUTTON
+\*------------------------------------*/
+
+.button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+  user-select: none;
+  border: 0;
+  padding: 16px;
+  font-weight: bold;
+  font-size: rem(18);
+  line-height: 1.15;
+  border-radius: 0;
+  color: inherit;
+  background-color: $primary-color;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    box-shadow: 2px 2px 8px rgba(#000000, 0.3);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.button--stack {
+  position: relative;
+  width: 240px;
+  height: 56px;
+  font-size: rem(16);
+  color: #fff;
+  z-index: 0;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-out;
+  }
+
+  &:before {
+    top: -3px;
+    left: 10px;
+    background-color: $primary-color;
+    transform: rotate(-4deg);
+    z-index: -2;
+  }
+  &:after {
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: -1;
+  }
+  &:hover {
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      box-shadow: 2px 2px 8px rgba(#000000, 0.3);
+    }
+  }
+  &:focus {
+    box-shadow: none;
+  }
+  
+  @media (min-width: 90em) {
+    width: 298px;
+    height: 70px;
+    font-size: rem(20);
+  }
+}
+
+
+.button--form-footer {
+  font-size: inherit;
+  padding: 12px 32px;
+}
+
+
+.button--contacts {
+  
+
+  @media (min-width: 80em) {
+    align-self: flex-end;
+  }
+}
+
+.button--advice {
+
+  @media (max-width: 61.99em) {
+    align-self: center;
+  }
+
+  @media (min-width: 62em) {
+    align-self: flex-end;
+  }
+  
+}
+
+.button > del {
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+.button.no-valid {
+  opacity: 0.2;
+}
+
+.button__box{
+
+  &--promo {
+
+    @media (max-width: 47.99em) {
+      text-align: center;
+    }
+  }
+
+}

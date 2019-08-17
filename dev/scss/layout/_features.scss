@@ -1,0 +1,40 @@
+/*------------------------------------*\
+  #FEATURES
+\*------------------------------------*/
+
+.features {
+  padding-bottom: 40px;
+
+  @media (min-width: 62em) {
+    padding-bottom: 80px;
+  }
+  @media (min-width: 80em) {
+    padding-bottom: 100px;
+  }
+  @media (min-width: 90em) {
+    padding-bottom: 120px;
+  }
+
+  &__grid {
+    margin-left: -16px;
+    margin-right: -16px;
+
+    > [class*=pure-u] {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &__col-left[class*=pure-u] {
+    margin-bottom: 40px;
+
+    @media (min-width: 62em) {
+      margin-bottom: 0;
+      padding-right: calc(100%/12);
+    }
+    
+    @media (min-width: 90em) {
+      padding-right: calc(100%/12 + 48px);
+    }
+  }
+}

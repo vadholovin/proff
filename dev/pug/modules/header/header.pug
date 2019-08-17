@@ -1,0 +1,33 @@
+header.header
+  .container
+    nav.header__nav
+      button.hamburger
+        <svg class="hamburger__img">
+          <use xlink:href="#hamburger"></use>
+        </svg>
+      .header__menu.menu.menu--primary
+        a.menu__item.is-current(href="index.html") О книге
+        a.menu__item(href="services.html") Услуги
+        a.menu__item(href="contacts.html") Контакты
+
+      ul.lang-switcher.lang-switcher--header
+        li.lang-switcher__item.is-current
+          a.lang-switcher__link(href="#") Ru
+        li.lang-switcher__item
+          a.lang-switcher__link(href="#") En
+
+  .mobile-nav
+    .mobile-nav__overlay
+      .mobile-nav__content
+        button.mobile-nav__close
+        .menu.menu--mobile
+          a.menu__item.is-current(href="index.html") О книге
+          a.menu__item(href="services.html") Услуги
+          a.menu__item(href="contacts.html") Контакты
+        
+        ul.lang-switcher.lang-switcher--mobile-nav
+          li.lang-switcher__item.is-current
+            a.lang-switcher__link(href="#") Ru
+          li.lang-switcher__item
+            a.lang-switcher__link(href="#") En
+

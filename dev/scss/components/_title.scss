@@ -1,0 +1,119 @@
+/*------------------------------------*\
+  #TITLE
+\*------------------------------------*/
+
+.title {
+  @include fluid-type($min_width, $max_width, 32px, 46px);
+
+  margin-top: 0;
+  font-weight: 900;
+  line-height: 1.125;
+
+  @media (min-width: 80em) {
+    line-height: 1.17;
+  }
+
+  &--features {
+    margin-bottom: 30px;
+
+    @media (min-width: 62em) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &--author {
+    margin-bottom: 36px;
+
+    span {
+      display: inline-block;
+      padding: 0.25rem;
+      background-color: #fff;
+    }
+    
+
+    @media (max-width: 35.99em) {
+      text-align: center;
+    }
+  }
+
+  &--readers {
+    margin-bottom: 48px;
+
+    @media (min-width: 62em) {
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: 80em) {
+      margin-bottom: 74px;
+    }
+
+    @media (min-width: 90em) {
+      margin-bottom: 84px;
+    }
+  }
+
+  &--banner {
+    margin-bottom: 24px;
+
+    @media (min-width: 48em) {
+      margin-bottom: 42px;
+    }
+
+    .banner--services & {
+      margin-bottom: 30px;
+    }
+
+    &-smaller {
+
+      @media (max-width: 47.99em) {
+        font-size: rem(24);
+      }
+    }
+  }
+
+  &--contacts,
+  &--services {
+    max-width: 520px;
+    margin-bottom: 30px;
+
+    @media (min-width: 62em) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &--exercises {
+    margin-bottom: 24px;
+    max-width: 830px;
+  }
+
+  &--example {
+    margin-bottom: 30px;
+    max-width: 830px;
+    
+    &-second {
+      margin-bottom: 36px;
+
+      @media (min-width: 80em) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &--book {
+    margin-bottom: 10px;
+    font-size: rem(36);
+  }
+
+
+  &--advice {
+    @include fluid-type($min_width, $max_width, 30px, 36px);
+    
+    max-width: 360px;
+    margin-bottom: 70px;
+
+    
+    @media (min-width: 80em) {
+      margin-bottom: 95px;
+    }
+  }
+}

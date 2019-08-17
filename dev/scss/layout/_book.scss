@@ -1,0 +1,60 @@
+/*------------------------------------*\
+  #BOOK
+\*------------------------------------*/
+
+.book-media {
+  margin-bottom: 60px;
+
+  @media (min-width: 62em) {
+    display: flex;
+    margin-bottom: 90px;
+  }
+}
+
+.book-media__img {
+  
+  @media (max-width: 35.99em) {
+    max-width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 62em) {
+    margin-right: 100px;
+  }
+}
+
+.book-media__body {
+  max-width: 430px;
+  padding-top: 35px;
+
+  @media (min-width: 48em) {
+    padding-top: 50px;
+  }
+}
+
+.book-media__subtitle {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: rem(20);
+  line-height: 1.6;
+
+  @media (min-width: 62em) {
+    margin-bottom: 40px;
+    font-size: rem(24);
+    line-height: 1.3;
+  }
+
+  @media (min-width: 80em) {
+    font-size: rem(28);
+    line-height: 1.2;
+  }
+}
+
+.book-media__cost {
+  display: block;
+  font-weight: bold;
+  font-size: rem(24);
+  line-height: 1.15;
+}
+

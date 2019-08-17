@@ -1,0 +1,23 @@
+/*------------------------------------*\
+  #CONTACT-LIST
+\*------------------------------------*/
+
+.contact-list {
+
+  &__item {
+    font-weight: bold;
+    font-size: rem(18);
+  }
+
+  &--footer {
+    margin-bottom: 54px;
+  }
+
+  &--contacts {
+    
+    
+    @media (max-width: 61.99em) {
+      margin-bottom: 60px;
+    }
+  }
+}

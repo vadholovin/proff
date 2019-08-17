@@ -1,0 +1,48 @@
+/*------------------------------------*\
+  #PACK
+\*------------------------------------*/
+
+.pack__body {
+  margin-bottom: 60px;
+
+  @media (min-width: 48em) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: 62em) {
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: 80em) {
+    margin-bottom: 120px;
+  }
+
+  @media (min-width: 90em) {
+    margin-bottom: 150px;
+  }
+}
+
+
+.pack__cost {
+  display: block;
+  margin-bottom: 36px;
+  font-weight: bold;
+  font-size: rem(24);
+  line-height: 1.15;
+}
+
+
+.pack__lead {
+  max-width: 330px;
+  
+
+  @media (min-width: 48em) {
+    margin-left: 180px;
+  }
+
+  
+  p {
+    margin-bottom: 0;
+  }
+}
+

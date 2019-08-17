@@ -1,0 +1,108 @@
+/*------------------------------------*\
+  #PROMO
+\*------------------------------------*/
+
+.promo {
+  position: relative;
+  padding-bottom: 80px;
+  overflow: hidden;
+
+  @media (min-width: 80em) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: 90em) {
+    padding-bottom: 120px;
+  }
+
+  &__row {
+    margin-left: -16px;
+    margin-right: -16px;
+
+    > [class*=pure-u] {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &__col-left[class*=pure-u] {
+
+    @media (min-width: 62em) {
+      padding-right: calc(100%/12);
+    }
+    
+    @media (min-width: 90em) {
+      padding-right: calc(100%/12 + 48px);
+    }
+    
+  }
+
+  &-img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    &__shadow {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 189%;
+      height: auto;
+      transform: translate(-20%, 45%) rotate(-14deg);
+      z-index: -1;
+    }
+
+
+    &--main {
+
+      @media (max-width: 61.99em) {
+        max-width: 280px;
+      }
+    }
+
+    &--modal {
+      max-width: 250px;
+    }
+  }
+
+  &__desc {
+    max-width: 426px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    @media (min-width: 62em) {
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: 80em) {
+      margin-top: 60px;
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: 90em) {
+      margin-top: 80px;
+      margin-bottom: 100px;
+    }
+  }
+
+
+  &__offer {
+    max-width: 350px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: rem(20);
+
+    @media (min-width: 62em) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 80em) {
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: 90em) {
+      margin-bottom: 70px;
+    }
+  }
+
+}
