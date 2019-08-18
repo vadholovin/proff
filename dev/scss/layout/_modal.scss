@@ -38,6 +38,7 @@
   border: 0;
   padding: 0;
   cursor: pointer;
+  z-index: 100;
 
   &:focus {
     outline: none;
@@ -84,6 +85,16 @@
   .modal--pack & {
     padding-top: 100px;
     padding-bottom: 80px;
+  }
+
+  .modal--respond & {
+    padding-top: 190px;
+    padding-bottom: 80px;
+
+    @media (min-width: 36em) {
+      padding-top: 145px;
+      padding-bottom: 145px;
+    }
   }
 }
 

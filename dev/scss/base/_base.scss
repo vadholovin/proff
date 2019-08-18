@@ -135,6 +135,19 @@ p {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: 80px;
+
+  @media (min-width: 62em) {
+    padding-top: 90px;
+  }
+  
+  @media (min-width: 80em) {
+    padding-top: 120px;
+  }
+  
+  @media (min-width: 90em) {
+    padding-top: 152px;
+  }
 }
 
 .content {
@@ -162,12 +175,15 @@ p {
       @media (min-width: 48em) {
         margin-bottom: 60px;
       }
+
       @media (min-width: 62em) {
         margin-bottom: 80px;
       }
+
       @media (min-width: 80em) {
         margin-bottom: 100px;
       }
+
       @media (min-width: 90em) {
         margin-bottom: 130px;
       }

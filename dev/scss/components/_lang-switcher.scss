@@ -17,6 +17,11 @@
     &:not(:last-child):after {
       content: '\a0/\a0';
     }
+
+    .lang-switcher--mobile & {
+      font-size: rem(22);
+      line-height: 1.45;
+    }
   }
 
   &__link {
@@ -30,5 +35,12 @@
 
   &:hover .lang-switcher__link:not(:hover) {
     opacity: 0.4;
+  }
+
+  &--header {
+
+    @media (max-width: 35.99em) {
+      display: none;
+    }
   }
 }

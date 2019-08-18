@@ -116,4 +116,11 @@
       margin-bottom: 95px;
     }
   }
+
+  &--respond {
+    @include fluid-type($min_width, $max_width, 30px, 36px);
+
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }

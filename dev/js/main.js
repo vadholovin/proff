@@ -20,6 +20,18 @@ $(document).ready(function () {
 
 
 /**
+ * Language switcher
+ */
+$(document).ready(function () {
+  $('.lang-switcher__item').click(function (e) { 
+    e.preventDefault();
+    $('.lang-switcher__item').removeClass('is-current');
+    $(this).addClass('is-current');
+  });
+});
+
+
+/**
  * Micromodal init
  * 
  * 1. Prevent page scrolling when a modal is open

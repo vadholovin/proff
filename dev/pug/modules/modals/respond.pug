@@ -1,0 +1,21 @@
+.modal.modal--respond#modal-respond(aria-hidden='true')
+  .modal__overlay(tabindex='-1', data-micromodal-close)
+    .modal__container.container(role='dialog', aria-modal='true')
+      button.modal__close(aria-label='Закрыть попап', data-micromodal-close)
+      main.modal__content.respond
+      
+        //- modal content
+        .respond__img
+          <svg class="respond__img-svg">
+            <use xlink:href="#abstract-2"></use>
+          </svg>
+        p.title.title--respond
+          | Поздравляем
+          br
+          | с приобретением книги
+          br
+          | «Профессия по любви»
+        p.respond__notes
+          | Книга выслана на почту в формате PDF,
+          | приятного чтения!
+        button.button.button--stack(data-micromodal-close) Закрыть

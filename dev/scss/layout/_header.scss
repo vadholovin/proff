@@ -3,11 +3,35 @@
 \*------------------------------------*/
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 555;
 
   &__nav {
+    position: relative;
     display: flex;
     align-items: center;
-    padding-top: 67px;
-    padding-bottom: 67px;
+    height: 80px;
+    // padding-top: 67px;
+    // padding-bottom: 67px;
+
+    @media (max-width: 35.99em) {
+      justify-content: center;
+    }
+
+    @media (min-width: 62em) {
+      height: 90px;
+    }
+
+    @media (min-width: 80em) {
+      height: 120px;
+    }
+
+    @media (min-width: 90em) {
+      height: 152px;
+    }
   }
 }
