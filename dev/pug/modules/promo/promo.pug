@@ -3,7 +3,11 @@
     .promo__row.pure-g
       .pure-u-1.pure-u-md-1-2.pure-u-xl-7-12.promo__col-left
         figure.promo-img.promo-img--main
-          img(src="img/general/book.png", alt="обложка книги Профессия по любви")
+          img(
+            src="img/general/book.png",
+            srcset="img/general/book.png 1x, img/general/book@2x.png 1.5x, img/general/book@2x.png 2x, img/general/book@2x.png 3x",
+            alt="обложка книги Профессия по любви"
+          )
           .promo-img__shadow
             <svg viewBox="0 0 1209 578" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -29,7 +33,9 @@
           | до бизнеса.
         p.promo__offer
           | Книга-тренинг в онлайн формате:
+          br
           | Как найти свое любимое дело
+          br
           | в меняющемся мире
         .button__box.button__box--promo
           button.button.button--stack(

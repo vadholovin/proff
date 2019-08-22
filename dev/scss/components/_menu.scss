@@ -117,8 +117,6 @@
     left: 32px;
     width: 24px;
     height: 24px;
-    font-size: 30px;
-    line-height: 0;
     background: transparent;
     border: 0;
     padding: 0;
@@ -128,8 +126,9 @@
       outline: none;
     }
 
-    &:before {
-      content: "\2715";
+    svg {
+      width: 100%;
+      height: 100%;
     }
   }
 

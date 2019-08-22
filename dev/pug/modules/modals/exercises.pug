@@ -1,7 +1,9 @@
 .modal.modal--exercises#modal-exercises(aria-hidden='true')
   .modal__overlay(tabindex='-1', data-micromodal-close)
+    button.modal__close(aria-label='Закрыть попап', data-micromodal-close)
+      svg
+        use(xlink:href="#close")
     .modal__container.container(role='dialog', aria-modal='true')
-      button.modal__close(aria-label='Закрыть попап', data-micromodal-close)
       main.modal__content.exercises
 
         h2.title.title--exercises

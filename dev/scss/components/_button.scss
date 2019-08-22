@@ -54,22 +54,16 @@
     transform: rotate(-4deg);
     z-index: -2;
   }
+
   &:after {
     top: 0;
     left: 0;
     background-color: #000;
     z-index: -1;
   }
+  
   &:hover {
     cursor: pointer;
-
-    &:before,
-    &:after {
-      box-shadow: 2px 2px 8px rgba(#000000, 0.3);
-    }
-  }
-  &:focus {
-    box-shadow: none;
   }
   
   @media (min-width: 90em) {

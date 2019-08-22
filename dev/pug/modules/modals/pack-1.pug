@@ -1,7 +1,9 @@
 .modal.modal--pack#modal-pack-1(aria-hidden='true')
   .modal__overlay(tabindex='-1', data-micromodal-close)
+    button.modal__close(aria-label='Закрыть попап', data-micromodal-close)
+      svg
+        use(xlink:href="#close")
     .modal__container.container(role='dialog', aria-modal='true')
-      button.modal__close(aria-label='Закрыть попап', data-micromodal-close)
       main.modal__content
 
         .pack__body

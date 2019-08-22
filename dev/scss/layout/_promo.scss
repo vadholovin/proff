@@ -47,6 +47,22 @@
       margin-right: auto;
     }
 
+    &::before {
+      content: '';
+      padding-top: 158.0594679186%;
+      float: left;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    img {
+      width: 100%;
+    }
+
     &__shadow {
       position: absolute;
       bottom: 0;

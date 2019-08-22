@@ -1,6 +1,11 @@
-$(document).ready(function () {
-  
-});
+
+/**
+ * Detect touch devices
+ */
+(function () {
+  document.documentElement.className += 
+    (("ontouchstart" in document.documentElement) ? ' touch' : ' no-touch');
+})();
 
 
 
@@ -37,14 +42,17 @@ $(document).ready(function () {
  * 1. Prevent page scrolling when a modal is open
  */
 (function () {
-  var body = document.body;
+  let body = document.body
+      site = document.documentElement;
 
   MicroModal.init({
     onShow: function() {
-      body.classList.add('modal-open'); /* 1 */
+      body.classList.add('is-overflowed'); /* 1 */
+      site.classList.add('is-overflowed'); /* 1 */
     },
     onClose: function() {
-      body.classList.remove('modal-open');;
+      body.classList.remove('is-overflowed'); /* 1 */
+      site.classList.remove('is-overflowed'); /* 1 */
     },
   });
 })();
@@ -63,7 +71,7 @@ $(document).ready(function () {
     nextArrow: $('.js-nav-readers .slider-nav__btn--next'),
     responsive: [
       {
-        breakpoint: 1439.98,
+        breakpoint: 1279.98,
         settings: {
           slidesToShow: 2,
         }

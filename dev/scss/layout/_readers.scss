@@ -26,6 +26,17 @@
     &__content {
       max-width: 302px;
       margin: 0 auto;
+
+      @media (min-width: 80em) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      @media (min-width: 90em) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      
     }
 
     &__img {

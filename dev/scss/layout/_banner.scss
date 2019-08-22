@@ -9,7 +9,7 @@
     background-color: $secondary-color;
     margin-left: -28px;
     margin-right: -28px;
-    padding: 62px 28px 46px 28px;
+    padding: 70px 28px 46px 28px;
 
     @media (min-width: 36em) {
       margin-left: 0;
@@ -19,6 +19,7 @@
     }
     
     @media (min-width: 62em) {
+      padding-top: 62px;
       padding-bottom: 85px;
     }
 
@@ -49,7 +50,7 @@
     }
 
     p:last-child {
-      margin-bottom: 50px;
+      margin-bottom: 46px;
 
       @media (min-width: 62em) {
         margin-bottom: 0;
@@ -62,14 +63,6 @@
     @media (min-width: 62em) {
       width: 50%;
       margin-right: auto;
-    }
-
-    p {
-
-      @media (min-width: 62em) {
-        max-width: 460px;
-      }
-      
     }
   }
 
@@ -86,13 +79,14 @@
     .banner__img {
       position: absolute;
       left: 50%;
-      top: -56px;
+      top: -42px;
       transform: translateX(-50%);
       width: 142px;
       height: 98px;
       z-index: 10;
 
       @media (min-width: 62em) {
+        top: -70px;
         left: auto;
         right: 46px;
         transform: translateX(0);
@@ -110,8 +104,12 @@
 
   &--services {
 
-    .banner__col-right {
-      padding-top: 36px;
+    .banner__col-left {
+      
+
+      @media (max-width: 61.99em) {
+        margin-bottom: 36px;
+      }
     }
   }
 }
