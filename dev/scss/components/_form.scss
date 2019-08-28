@@ -53,8 +53,7 @@
 
   &__fieldset {
 
-    &--contacts,
-    &--advice {
+    &--contacts {
       width: 100%;
       max-width: 440px;
       margin-bottom: 50px;
@@ -70,6 +69,17 @@
       @media (min-width: 90em) {
         margin-bottom: 175px;
       }
+    }
+
+    &--advice {
+      width: 100%;
+      max-width: 440px;
+      margin-bottom: 50px;
+      
+      @media (min-width: 62em) {
+        margin-bottom: 80px;
+      }
+      
     }
   }
 
