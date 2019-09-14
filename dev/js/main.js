@@ -8,6 +8,19 @@
 })();
 
 
+/**
+ * Animated Scroll To Anchor
+ */
+
+(function(){
+
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    offset: 60,
+  });
+
+})();
+
+
 
 /**
  * Menu
@@ -42,7 +55,7 @@ $(document).ready(function () {
  * 1. Prevent page scrolling when a modal is open
  */
 (function () {
-  let body = document.body
+  let body = document.body,
       site = document.documentElement;
 
   MicroModal.init({
